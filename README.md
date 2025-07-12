@@ -24,7 +24,7 @@ This project provides an easy-to-use web interface for configuring and monitorin
    
 The script will automatically detect your system, install all requirements, and launch the application.
 
-Access the web interface at: http://localhost:5000
+Access the web interface at: http://localhost:port
 (or use your server's IP address instead of localhost if remote)
 <img width="1842" height="909" alt="image" src="https://github.com/user-attachments/assets/e905a789-27d3-45c3-83c6-4ba381066985" />
 <img width="1165" height="793" alt="image" src="https://github.com/user-attachments/assets/0f1d08dd-c880-45d1-999e-d67c3d4f403f" />
