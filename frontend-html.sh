@@ -375,8 +375,9 @@ body.rtl .diagnostics-section {
       en: {
         main_title: "Wingbits Station Web Config",
         menu: [
-          "Live Stats", "Set Gain", "QOL Options", "Diagnostics", "Wingbits Metrics", "Support Menu", "Restart", "Change Password", "URLs", "Help" // Reordered menu items
+          "Live Stats", "Set Gain", "QOL Options", "Support", "Wingbits Metrics", "Restart", "Change Password", "URLs", "Help"
         ],
+        support_menu_title: "Support",
         readsb: "readsb Service",
         wingbits: "wingbits Service",
         tar1090: "tar1090 Service",
@@ -438,6 +439,7 @@ body.rtl .diagnostics-section {
         update_client_progress: "Wingbits Client Update Progress",
         update_log_placeholder: "Update logs will appear here...",
         wingbits_metrics: "Wingbits Metrics",
+        diagnostics: "Diagnostics",
         diagnostics_title: "Diagnostics & Support Tools",
         generate_log_url_title: "Generate Log URL for Support",
         generate_log_url_desc: "Click a button to generate a temporary URL containing system logs. This is useful for sharing with the Wingbits support team.",
@@ -455,8 +457,9 @@ body.rtl .diagnostics-section {
       ar: {
         main_title: "إعداد محطة Wingbits عبر الويب",
         menu: [
-          "الحالة الحية", "ضبط الكسب", "خيارات الجودة", "التشخيص", "مقاييس Wingbits", "الدعم", "إعادة/إيقاف التشغيل", "تغيير كلمة المرور", "روابط محلية", "حول" // Reordered menu items
+          "الحالة الحية", "ضبط الكسب", "خيارات الجودة", "الدعم", "مقاييس Wingbits", "إعادة/إيقاف التشغيل", "تغيير كلمة المرور", "روابط محلية", "حول"
         ],
+        support_menu_title: "الدعم",
         readsb: "خدمة readsb",
         wingbits: "خدمة wingbits",
         tar1090: "خدمة tar1090",
@@ -518,6 +521,7 @@ body.rtl .diagnostics-section {
         update_client_progress: "تقدم تحديث عميل Wingbits",
         update_log_placeholder: "ستظهر سجلات التحديث هنا...",
         wingbits_metrics: "مقاييس Wingbits",
+        diagnostics: "التشخيص",
         diagnostics_title: "أدوات التشخيص والدعم",
         generate_log_url_title: "إنشاء رابط للسجلات للدعم",
         generate_log_url_desc: "انقر فوق زر لإنشاء عنوان URL مؤقت يحتوي على سجلات النظام. هذا مفيد للمشاركة مع فريق دعم Wingbits.",
@@ -582,12 +586,11 @@ body.rtl .diagnostics-section {
         { key: 'live_stats', label: LANG === 'ar' ? 'الحالة الحية' : 'Live Stats' },
         { key: 'set_gain', label: LANG === 'ar' ? 'ضبط الكسب' : 'Set Gain' },
         { key: 'qol_options', label: LANG === 'ar' ? 'خيارات الجودة' : 'QOL Options' },
-        { key: 'diagnostics', label: LANG === 'ar' ? 'التشخيص' : 'Diagnostics' },
-        { key: 'wingbits_metrics', label: LANG === 'ar' ? 'مقاييس Wingbits' : 'Wingbits Metrics', isExternalLink: true, url: 'http://192.168.100.5:8088/metrics' }, // Moved Wingbits Metrics
-        { key: 'support_menu', label: LANG === 'ar' ? 'الدعم' : 'Support Menu' },
+        { key: 'support_menu', label: txt[LANG].support_menu_title },
+        { key: 'wingbits_metrics', label: LANG === 'ar' ? 'مقاييس Wingbits' : 'Wingbits Metrics', isExternalLink: true, url: 'http://192.168.100.5:8088/metrics' },
         { key: 'restart', label: LANG === 'ar' ? 'إعادة/إيقاف التشغيل' : 'Restart' },
         { key: 'change_password', label: LANG === 'ar' ? 'تغيير كلمة المرور' : 'Change Password' },
-        { key: 'urls', label: LANG === 'ar' ? 'روابط محلية' : 'URLs' }, // Moved URLs
+        { key: 'urls', label: LANG === 'ar' ? 'روابط محلية' : 'URLs' },
         { key: 'help', label: LANG === 'ar' ? 'مساعدة' : 'Help' }
       ];
       let menu = '';
@@ -614,12 +617,13 @@ body.rtl .diagnostics-section {
           menu += `
             <div style="margin-left:18px;">
               <button class="${supportSub==='debug'?'active':''}" data-key="support_menu" data-sub="debug" onclick="renderMenuPage('support_menu','debug')">${LANG === 'ar' ? 'تصحيح' : 'Debug'}</button>
+              <button class="${supportSub==='diagnostics'?'active':''}" data-key="support_menu" data-sub="diagnostics" onclick="renderMenuPage('support_menu','diagnostics')">${txt[LANG].diagnostics}</button>
               <button class="${supportSub==='wingbits_status'?'active':''}" data-key="support_menu" data-sub="wingbits_status" onclick="renderMenuPage('support_menu','wingbits_status')">${LANG === 'ar' ? 'حالة wingbits' : 'wingbits status'}</button>
               <button class="${supportSub==='readsb_status'?'active':''}" data-key="support_menu" data-sub="readsb_status" onclick="renderMenuPage('support_menu','readsb_status')">${LANG === 'ar' ? 'حالة readsb' : 'readsb status'}</button>
               <button class="${supportSub==='wingbits_logs'?'active':''}" data-key="support_menu" data-sub="wingbits_logs" onclick="renderMenuPage('support_menu','wingbits_logs')">${LANG === 'ar' ? 'سجلات wingbits' : 'wingbits logs'}</button>
               <button class="${supportSub==='readsb_logs'?'active':''}" data-key="support_menu" data-sub="readsb_logs" onclick="renderMenuPage('support_menu','readsb_logs')">${LANG === 'ar' ? 'سجلات readsb' : 'readsb logs'}</button>
               <button class="${supportSub==='all_logs'?'active':''}" data-key="support_menu" data-sub="all_logs" onclick="renderMenuPage('support_menu','all_logs')">${LANG === 'ar' ? 'جميع السجلات الحديثة' : 'All recent logs'}</button>
-              <button class="${supportSub==='last_install_log'?'active':''}" data-key="support_menu" data-sub="last_install_log" onclick="renderMenuPage('support_menu','last_install_log')">${LANG === 'ar' ? 'سجل التثبيت الأخير' : 'Last install log'}</button>
+              <!-- <button class="${supportSub==='last_install_log'?'active':''}" data-key="support_menu" data-sub="last_install_log" onclick="renderMenuPage('support_menu','last_install_log')">${LANG === 'ar' ? 'سجل التثبيت الأخير' : 'Last install log'}</button> -->
               <button class="${supportSub==='update_client'?'active':''}" data-key="support_menu" data-sub="update_client" onclick="confirmUpdateClient()">${LANG === 'ar' ? 'تحديث العميل' : 'Update Client'}</button>
             </div>
           `;
@@ -662,6 +666,7 @@ body.rtl .diagnostics-section {
       if (key === 'support_menu') {
         renderMenu('support_menu', sub, qolSub);
         if (sub === 'debug') return renderDebug();
+        if (sub === 'diagnostics') return renderDiagnosticsPage();
         if (sub === 'wingbits_status') return callAPI('/api/service/wingbits/status', 'GET', null, 'main-content');
         if (sub === 'readsb_status') return callAPI('/api/service/readsb/status', 'GET', null, 'main-content');
         if (sub === 'wingbits_logs') return callAPI('/api/service/wingbits/logs', 'GET', null, 'main-content');
@@ -683,7 +688,6 @@ body.rtl .diagnostics-section {
         mainContent.innerHTML = `<h2>Please select sub-option</h2>`; // Default for QOL if no sub-option selected
         return;
       }
-      if (key === 'diagnostics') return renderDiagnosticsPage();
       if (key === 'urls') return renderURLs();
       if (key === 'restart') return renderPower();
       if (key === 'change_password') return renderChangePasswordPage(); // New page for password change
@@ -2200,4 +2204,4 @@ ${d.logs || "-"}
 EOF
 
 echo "Frontend files written."
-echo
+echo ""
