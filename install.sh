@@ -6,7 +6,7 @@
 
 set -e
 
-REPO_URL="https://github.com/Alfahad73/Wingbits-WebUI.git"
+REPO_URL="https://github.com/Alfahad73/Wingbits-WebUI-Config.git"
 INSTALL_DIR="/opt/wingbits-station-web"
 SERVICE_PATH="/etc/systemd/system/wingbits-web-panel.service"
 AUTH_FILE="$INSTALL_DIR/conf/auth.json"
