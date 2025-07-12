@@ -26,20 +26,19 @@ The script will automatically detect your system, install all requirements, and 
 
 Access the web interface at: http://localhost:5000
 (or use your server's IP address instead of localhost if remote)
-![Screenshot 2025-07-07 133754](https://github.com/user-attachments/assets/6d45129e-f7be-45c8-a0b9-2414f9751988)
-![Screenshot 2025-07-07 133830](https://github.com/user-attachments/assets/1086884f-0cb2-4cc8-bab9-72ab619fb0ea)
-![Screenshot 2025-07-07 133905](https://github.com/user-attachments/assets/a626d1b9-1c47-4f16-85b5-0b5f5c6224b5)
-![Screenshot 2025-07-07 133954](https://github.com/user-attachments/assets/b863104b-9e89-4f27-ae01-2e45b9243ca3)
-![Screenshot 2025-07-07 134007](https://github.com/user-attachments/assets/56048be7-7657-4a41-b877-75d30d1ea256)
-![Screenshot 2025-07-07 134023](https://github.com/user-attachments/assets/7922a563-36b8-4dce-be13-a7b9409b254e)
-![Screenshot 2025-07-07 134038](https://github.com/user-attachments/assets/1dc982ee-4c58-488c-b309-59d382dff127)
-![Screenshot 2025-07-07 134131](https://github.com/user-attachments/assets/ae2da372-947e-4a36-866b-e583e1dde9ea)
-![Screenshot 2025-07-07 134145](https://github.com/user-attachments/assets/03382b31-8309-441c-bfe2-4e52e3b455bd)
-![Screenshot 2025-07-07 134159](https://github.com/user-attachments/assets/0f495bb6-dea2-4280-a5cd-2e77d9a43d82)
-![Screenshot 2025-07-07 134213](https://github.com/user-attachments/assets/c270cdff-3508-4e81-b411-0dd00eaf5414)
-![Screenshot 2025-07-07 134225](https://github.com/user-attachments/assets/70e89d12-6c16-453d-9c1b-413323dcb8a4)
-
-
+<img width="1842" height="909" alt="image" src="https://github.com/user-attachments/assets/e905a789-27d3-45c3-83c6-4ba381066985" />
+<img width="1165" height="793" alt="image" src="https://github.com/user-attachments/assets/0f1d08dd-c880-45d1-999e-d67c3d4f403f" />
+<img width="1570" height="857" alt="image" src="https://github.com/user-attachments/assets/b66286c7-36c2-4794-8774-ffe102e1cb19" />
+<img width="1516" height="537" alt="image" src="https://github.com/user-attachments/assets/b9b7e2de-27a1-466a-9b82-b967f416179c" />
+<img width="1533" height="306" alt="image" src="https://github.com/user-attachments/assets/44680229-8832-4ac1-93a2-f8ab189c7daf" />
+<img width="1512" height="276" alt="image" src="https://github.com/user-attachments/assets/f552bffe-0aa8-4924-a62d-92dc2fe1f7f9" />
+<img width="1500" height="299" alt="image" src="https://github.com/user-attachments/assets/f5398faf-3f0f-455a-975b-dfb7cf02552a" />
+<img width="1511" height="722" alt="image" src="https://github.com/user-attachments/assets/41a1c3b6-8a93-4e0f-988c-191a18c28756" />
+<img width="1519" height="831" alt="image" src="https://github.com/user-attachments/assets/f43d5436-a38e-4feb-afc0-d7bcce3a0dfd" />
+<img width="1537" height="445" alt="image" src="https://github.com/user-attachments/assets/40128c5a-87dc-422b-a814-a2d5b2f2055e" />
+<img width="1525" height="442" alt="image" src="https://github.com/user-attachments/assets/9212e16f-5b72-49bd-a55e-1ec5dd44eddd" />
+<img width="1545" height="835" alt="image" src="https://github.com/user-attachments/assets/21bddd0f-ea9e-4ea1-bb7e-3c04b5a34c77" />
+<img width="1498" height="449" alt="image" src="https://github.com/user-attachments/assets/27295795-76ff-415b-9487-000a3586ef3c" />
 
 
 Contribution
